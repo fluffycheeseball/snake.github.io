@@ -24,7 +24,7 @@ const PIXEL_RADIUS = PIXEL_SIZE / 2;
 const PIXELS = Math.floor(BOARD_SIZE / PIXEL_SIZE) - 2;
 const FRUITS = ["🍑", "🍎", "🍏", "🍐", "🍓", "🥝"];
 
-const SNAKE_SPEED = 100; // speed in ms
+const SNAKE_SPEED = 500; // speed in ms
 const OPTIMAL_FRAME_RATE = (1 / 60) * 1000; // 60fps
 
 // initial state
@@ -89,7 +89,7 @@ export default class App extends React.Component<{}, IState> {
           <div onClick={this.togglePlay}>
             <canvas id="canvas" width={BOARD_SIZE} height={BOARD_SIZE} />
           </div>
-          <div className="under-canvas">REACT SNAKE 1987</div>
+          <div className="under-canvas">Jude SNAKE 1987</div>
 
           {this.renderControls()}
         </div>
